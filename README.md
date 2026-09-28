@@ -6,8 +6,11 @@
 
 ## Dataset
 
-Source: NYC Yellow Taxi Trip Data (Kaggle)  
-This project uses a random sample of 200,000 taxi trips extracted from a multi-million record dataset.
+Source: NYC Yellow Taxi Trip Data (Kaggle)
+
+In the saved notebook run, the code loads the first 200,000 rows of `yellow_tripdata_2015-01.csv` (200,000 rows and 19 columns). These are the first rows of that file, not a random sample.
+
+The notebook selects the first file in its sorted list of downloaded CSV/Parquet files. It limits CSV input to 200,000 rows; for a Parquet file, it currently loads the whole file. A future dataset version or a different selected file could therefore change the rows analyzed.
 
 Each observation represents one taxi trip and includes time, distance, fare, passenger count, and payment information.
 
